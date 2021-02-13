@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    font-size: 5rem;
+    margin: 35px 0;
+    text-align: center;
+}
+
+.tablero{
+    align-items: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.tablero img{
+    width: 140px;
+}
+
+.tablero i{
+    font-size: 10rem;
+}
+
+.btn-start{
+    cursor: pointer;
+    position: absolute;
+    font-size: 2rem;
+    width: 300px;
+    height: 60px;
+    top: 265px;
+}
+
+.animate__animated.animate__pulse {
+    --animate-duration: 1.5s;
+  }
+
+.elections{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 120px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.elections #rock{
+    background-image: url('img/rock.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.elections #paper{
+    background-image: url('img/paper.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.elections #scissors{
+    background-image: url('img/scissors.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.elections div{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    width: 33.3%;
+    height: 100%;
+    text-align: center;
+}
+
+.elections div:hover{
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    transform: scale(1.2, 1.2);
+}
+
+.hide{
+    display: none;
+    transition: all 1000ms;
+}

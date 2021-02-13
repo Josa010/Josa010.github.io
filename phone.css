@@ -1,0 +1,25 @@
+.tablero {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.tablero img{
+    width: 70px;
+}
+
+.tablero i{
+    font-size: 5rem;
+}
+
+.btn-start{
+    font-size: 1.4rem;
+    width: 200px;
+    height: 40px;
+    top: 127px
+}
+
+.elections{
+    width: 80%;
+    padding: 20px;
+}
