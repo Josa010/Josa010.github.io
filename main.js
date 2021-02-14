@@ -3,7 +3,6 @@ const paper = document.getElementById("paper")
 const scissors = document.getElementById("scissors")
 const btnStart = document.getElementById("btn-start")
 const vsLogo = document.getElementById("vs")
-const contador = document.getElementById("contador")
 const elections = document.getElementById('elections')
 const playerQuestion = document.getElementById('playerQuestion')
 const botQuestion = document.getElementById('botQuestion')
@@ -200,6 +199,7 @@ class Juego {
                     .then(() => {
                         this.toggleElecciones()
                         this.toggleBtnStart()
+                        this.toggleImg()
                     })
                 }, 800)
                 break;
@@ -209,6 +209,7 @@ class Juego {
                     .then(() => {
                         this.toggleElecciones()
                         this.toggleBtnStart()
+                        this.toggleImg()
                     })
                 }, 800)
                 break;
@@ -218,6 +219,7 @@ class Juego {
                     .then(() => {
                         this.toggleElecciones()
                         this.toggleBtnStart()
+                        this.toggleImg()
                     })
                 }, 800)
                 break;
@@ -227,6 +229,7 @@ class Juego {
                     .then(() => {
                         this.toggleElecciones()
                         this.toggleBtnStart()
+                        this.toggleImg()
                     })
                 }, 800)
                 break;

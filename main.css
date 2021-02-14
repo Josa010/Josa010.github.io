@@ -3,21 +3,24 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #292B2E;
 }
 
 html{
     font-size: 62.5%;
+    background-color: rgb(247, 247, 247);
 }
 
 h1{
     font-size: 5rem;
-    margin: 35px 0;
+    margin: 35px 0 70px;
     text-align: center;
 }
 
 .tablero{
     align-items: center;
-    border: 1px solid black;
+    border-radius: 40px;
+    box-shadow: 0px 0px 7px 0px rgba(69,72,76,0.8);
     display: flex;
     justify-content: space-around;
     width: 65%;
@@ -36,12 +39,21 @@ h1{
 }
 
 .btn-start{
+    background-color: rgb(231, 231, 231);
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(69,72,76,0.6);
     cursor: pointer;
     position: absolute;
     font-size: 2rem;
     width: 300px;
     height: 60px;
     top: 265px;
+    outline: none;
+}
+
+.btn-start:hover{
+    background-color: rgb(216, 216, 216);
 }
 
 .animate__animated.animate__pulse {
@@ -49,7 +61,6 @@ h1{
   }
 
 .elections{
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     align-items: center;
