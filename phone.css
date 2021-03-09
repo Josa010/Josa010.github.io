@@ -1,0 +1,100 @@
+.main-container{
+    width: 100%;
+}
+
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.landing-page nav{
+    height: 30px;
+}
+
+.landing-page nav ul{
+    width: 70%;
+    font-size: 1.4rem;
+}
+
+.h1-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    position: static;
+
+}
+
+.presentation{
+    height: 80vh;
+}
+
+.presentation img{
+    width: 100%;
+}
+
+h2{
+    color: var(--color-principal);
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+}
+
+h3{
+    font-size: 3rem;
+    margin-bottom: 78px;
+}
+
+.cards-container{
+    grid-template-columns: repeat(2, 124px);
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+}
+
+.card{
+    background-color: rgba(232, 232, 232, 1);
+    border-radius: 20px;
+    height: 180px;
+    width: 124px;
+}
+
+.pokemon-id{
+    font-size: 1.2rem;
+}
+
+.card img{
+    height: 70px;
+    width: 60px;
+    vertical-align: middle;
+}
+
+.pokemon-name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+
+}
+
+.type{
+    font-size: 1.2rem;
+    padding: 2.5px;
+}
+
+
+footer ul{
+    width: 80%;
+}
+
+footer ul a{
+    font-size: 1.4rem;
+}

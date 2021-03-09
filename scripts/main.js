@@ -195,7 +195,7 @@ const crearCards = (nombrePokemon, url) => {
                 divTypes.append(divType)
                 break;
 
-            case 'acero': 
+            case 'steel': 
                 divType = document.createElement('div')
                 divType.classList.add('acero')
                 divType.innerHTML = 'Acero'

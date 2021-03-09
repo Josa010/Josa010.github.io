@@ -28,6 +28,7 @@ html{
     --color-planta: #9BCC50;
     --color-fuego: #FD7D24;
     --color-psiquico: #F366B9;
+   --color-acero: #9EB7B8; 
     --color-black: #000;
     --color-white: #FFF;
 }
@@ -35,6 +36,11 @@ html{
 .fuego{
     background-color: var(--color-fuego);
     color: #fff;
+}
+
+.acero{
+    background-color: var(--color-acero);
+    color: var(--color-white);
 }
 
 .dragon{
