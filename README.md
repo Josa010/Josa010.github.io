@@ -1,2 +1,2 @@
-# Josa010.github.io
-Piedra, papel o tijera
+# pokemon-cards
+Pokemon cards!

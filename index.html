@@ -1,48 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piedra, papel o tijera</title>
+    <title>Pokemon Cards!</title>
 
-    <!-- css -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="phone.css"  media="(max-width: 700px)">
 
-    <!-- Sweet alerts -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- Animate -->
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <!-- Icons -->
-    <script src="https://kit.fontawesome.com/05076beaa7.js" crossorigin="anonymous"></script>
+    
 
 </head>
 <body>
     
-    <div class="title">
-        <h1>Piedra, papel o tijera!</h1>
+    <div class="main-container">
+        <div class="landing-page">
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/Josa010/pokemon-cards">Github</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Pokemon Cards!</h1>
+        </div>
+
+        <div class="presentation">
+            <img src="assets/imgs/sandslash.png" alt="SandSlash">
+            <h2>All 151 Pokemons from the first generation!</h2>
+        </div>
+
+        <h3>Let's go!</h3>
+
+        <div class="cards-container">
+
+
+
+        </div>
+
+
+        <footer>
+            <div>
+                <ul>
+                    <li><a href="https://github.com/Josa010/pokemon-cards">Github</a></li>
+                    <li><a href="#">&copy;Josafat</a></li>
+                    <li><a href="#">Github</a></li>
+                </ul>
+            </div>
+        </footer>
+
     </div>
-
-    
-
-    <div class="tablero">
-        <div id="playerQuestion"><i class="fas fa-question"></i></div>
-        <div id="contador" class="animate__animated animate__pulse animate__infinite"><i id="vs" class="vs">VS</i></div>
-        <div id="botQuestion"><i class="fas fa-question"></i></div>
-        <button id="btn-start" class="btn-start" onclick="empezarJuego()">Empezar partida!</button>
-    </div>
-
-    <div id="elections" class="elections hide">
-        <div id="rock" data-election="rock"></div>
-        <div id="paper" data-election="paper"></div>
-        <div id="scissors" data-election="scissors"></div>
-    </div>
-
-
-    <!-- js -->
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
 
 </body>
 </html>

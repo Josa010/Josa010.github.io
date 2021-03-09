@@ -1,112 +1,279 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #292B2E;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 html{
     font-size: 62.5%;
-    background-color: rgb(247, 247, 247);
 }
 
-h1{
-    font-size: 5rem;
-    margin: 35px 0 70px;
-    text-align: center;
+:root{
+    --main-background: #2E2E2E;
+    --color-principal: #F7C505;
+    --color-dragon: linear-gradient(rgba(84, 165, 208, 1), rgba(241, 110, 87, 1));
+    --color-fantasma: #B97FC9;
+    --color-hielo: #51C4E7;
+    --color-roca: #A38C21;
+    --color-lucha: #D56723;
+    --color-hada: #FDB9E9;
+    --color-tierra: linear-gradient(rgba(247, 222, 63, 1), rgba(171, 152, 66, 1));
+    --color-electrico: #EED535;
+    --color-normal: #A4ACAF;
+    --color-bicho: #729F3F;
+    --color-volador: linear-gradient(rgba(61, 199, 239, 1), rgba(189, 185, 184, 1));
+    --color-agua: #4592C4;
+    --color-veneno: #B97FC9;
+    --color-planta: #9BCC50;
+    --color-fuego: #FD7D24;
+    --color-psiquico: #F366B9;
+    --color-black: #000;
+    --color-white: #FFF;
 }
 
-.tablero{
-    align-items: center;
-    border-radius: 40px;
-    box-shadow: 0px 0px 7px 0px rgba(69,72,76,0.8);
-    display: flex;
-    justify-content: space-around;
-    width: 65%;
-    height: 300px;
-    margin: 0 auto;
-    margin-bottom: 100px;
+.fuego{
+    background-color: var(--color-fuego);
+    color: #fff;
+}
+
+.dragon{
+    background-image: var(--color-dragon);
+    color: var(--color-white);
+}
+
+.psiquico{
+    background-color: var(--color-psiquico);
+    color: var(--color-white);
+}
+
+.planta{
+    background-color: var(--color-planta);
+    color: black;
+}
+
+.veneno{
+    background-color: var(--color-veneno);
+    color: var(--color-white);
+}
+
+.agua{
+    background-color: var(--color-agua);
+    color: var(--color-white);
+}
+
+.volador{
+    background-image: var(--color-volador);
+    color: var(--color-white);
+}
+
+.bicho{
+    background-color: var(--color-bicho);
+    color: var(--color-white);
+}
+
+.normal{
+    background-color: var(--color-normal);
+    color: var(--color-black);
+}
+
+.electrico{
+    background-color: var(--color-electrico);
+    color: var(--color-black);
+}
+
+.tierra{
+    background-image: var(--color-tierra);
+    color: var(--color-white);
+}
+
+.hada{
+    background-color: var(--color-hada);
+    color: var(--color-black);
+}
+
+.lucha{
+    background-color: var(--color-lucha);
+    color: var(--color-white);
+}
+
+.roca{
+    background-color: var(--color-roca);
+    color: var(--color-white);
+}
+
+.hielo{
+    background-color: var(--color-hielo);
+    color: var(--color-white);
+}
+
+.fantasma{
+    background-color: var(--color-fantasma);
+    color: var(--color-white);
+}
+
+
+
+
+
+
+
+body {
+    background-color: var(--main-background);
+}
+
+.main-container{
+    background-color: var(--main-background);
+}
+
+.landing-page{
+    background-image: url('assets/imgs/ladding-background.jpg');
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
     position: relative;
 }
 
-.tablero img{
-    width: 140px;
+.landing-page nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
 }
 
-.tablero i{
-    font-size: 10rem;
+.landing-page nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    font-size: 2.4rem;
+    list-style: none;
 }
 
-.btn-start{
-    background-color: rgb(231, 231, 231);
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px rgba(69,72,76,0.6);
-    cursor: pointer;
+.landing-page nav ul a{
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+h1{
+    color: var(--color-principal);
+    font-size: 9.6rem;
+    font-weight: bold;
     position: absolute;
-    font-size: 2rem;
-    width: 300px;
-    height: 60px;
-    top: 265px;
-    outline: none;
+    text-align: center;
+    top: 42.5%;
+    right: 28%;
 }
 
-.btn-start:hover{
-    background-color: rgb(216, 216, 216);
+.presentation{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    place-items: center;
+    place-content: middle;
+    height: 100vh;
+    width: 100%;
 }
 
-.animate__animated.animate__pulse {
-    --animate-duration: 1.5s;
-  }
-
-.elections{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    height: 120px;
-    margin: 0 auto;
-    padding: 10px;
+h2{
+    color: var(--color-principal);
+    font-size: 4.8rem;
+    font-weight: normal;
+    text-align: center;
+    width: 40%;
 }
 
-.elections #rock{
-    background-image: url('img/rock.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.elections #paper{
-    background-image: url('img/paper.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.elections #scissors{
-    background-image: url('img/scissors.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.elections div{
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
-    width: 33.3%;
-    height: 100%;
+h3{
+    color: var(--color-principal);
+    font-size: 4.8rem;
+    font-weight: normal;
+    margin-bottom: 78px;
     text-align: center;
 }
 
-.elections div:hover{
-    /* background-color: rgba(0, 0, 0, 0.2); */
-    transform: scale(1.2, 1.2);
+.cards-container{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(4, 224px);
+    grid-column-gap: 67px;
+    grid-row-gap: 67px;
+    justify-content: center;
+    margin-bottom: 78px;
+    text-align: center;
+    width: 100%;
 }
 
-.hide{
-    display: none;
-    transition: all 1000ms;
+.card{
+    background-color: rgba(232, 232, 232, 1);
+    border-radius: 20px;
+    height: 286px;
+    width: 224px;
+    box-shadow: 10px 10px 0px 0px rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.pokemon-id{
+    font-size: 1.8rem;
+    font-weight: 400;
+    left: 10px;
+    position: absolute;
+    top: 8px;
+}
+
+.card img{
+    height: 132px;
+    margin-bottom: 14px;
+    margin-top: 12px;
+    width: 117px;
+    vertical-align: middle;
+}
+
+.pokemon-name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.0rem;
+    font-weight: 500;
+}
+
+.type-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 17px;
+    width: 100%;
+}
+
+.type{
+    align-items: middle;
+    border-radius: 10px;
+    display: flex;
+    font-size: 1.6rem;
+    padding: 3.5px;
+}
+
+footer{
+    height: 110px;
+    background-color: #1B1B1B;
+}
+
+footer div{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 40%;
+}
+
+footer ul a{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
 }
