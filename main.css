@@ -33,12 +33,12 @@ html{
     --color-white: #FFF;
 }
 
-.fuego{
+.fire{
     background-color: var(--color-fuego);
     color: #fff;
 }
 
-.acero{
+.steel{
     background-color: var(--color-acero);
     color: var(--color-white);
 }
@@ -48,32 +48,32 @@ html{
     color: var(--color-white);
 }
 
-.psiquico{
+.psychic{
     background-color: var(--color-psiquico);
     color: var(--color-white);
 }
 
-.planta{
+.grass{
     background-color: var(--color-planta);
     color: black;
 }
 
-.veneno{
+.poison{
     background-color: var(--color-veneno);
     color: var(--color-white);
 }
 
-.agua{
+.water{
     background-color: var(--color-agua);
     color: var(--color-white);
 }
 
-.volador{
+.flying{
     background-image: var(--color-volador);
     color: var(--color-white);
 }
 
-.bicho{
+.bug{
     background-color: var(--color-bicho);
     color: var(--color-white);
 }
@@ -83,37 +83,37 @@ html{
     color: var(--color-black);
 }
 
-.electrico{
+.electric{
     background-color: var(--color-electrico);
     color: var(--color-black);
 }
 
-.tierra{
+.ground{
     background-image: var(--color-tierra);
     color: var(--color-white);
 }
 
-.hada{
+.fairy{
     background-color: var(--color-hada);
     color: var(--color-black);
 }
 
-.lucha{
+.fighting{
     background-color: var(--color-lucha);
     color: var(--color-white);
 }
 
-.roca{
+.rock{
     background-color: var(--color-roca);
     color: var(--color-white);
 }
 
-.hielo{
+.ice{
     background-color: var(--color-hielo);
     color: var(--color-white);
 }
 
-.fantasma{
+.ghost{
     background-color: var(--color-fantasma);
     color: var(--color-white);
 }
@@ -162,14 +162,19 @@ body {
     text-decoration: none;
 }
 
+.h1-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 h1{
     color: var(--color-principal);
     font-size: 9.6rem;
     font-weight: bold;
-    position: absolute;
-    text-align: center;
-    top: 42.5%;
-    right: 28%;
 }
 
 .presentation{
@@ -254,7 +259,7 @@ h3{
     border-radius: 10px;
     display: flex;
     font-size: 1.6rem;
-    padding: 3.5px;
+    padding: 3.5px 10px;
 }
 
 footer{
